@@ -1,1 +1,10 @@
-
+apiversion: v1
+kind: pod
+metadata:
+  labels:
+    pod-label: jenkins-agent
+spec:
+   conatainers:
+   volumes:
+   imagepullsecrets:
+       name: infosys-sre-docker
