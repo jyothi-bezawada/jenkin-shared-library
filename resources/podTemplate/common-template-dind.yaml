@@ -1,0 +1,12 @@
+conatainers:
+  - name: dind-daemon
+    image: artifactory.awsmgmt.massmutual.com/infosys-sre-docker/docker:17.12.0-dind
+    resources:
+      requests:
+        cpu: 20m
+        memory: 512Mi
+    securirycontext:
+      privileged: true
+    volumeMounts;
+      - name: docker-graph-storage
+        mountpath: /var/lib/docker
