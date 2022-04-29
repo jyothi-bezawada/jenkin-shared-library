@@ -1,1 +1,19 @@
-
+pipeline {
+  agent {
+    kubernetes { yaml jenkinsAgentpod.getpodwithcontainers(['nginx'])}
+  }
+   stages {
+        stage ('build') {
+            steps {
+                sh 'python --version'
+               }
+             }
+              stage ('build-nginx') {
+                   steps {
+                     container ('nginx') {
+                       sh node --version'
+                       }
+                     }
+                   }
+                 }   
+  }
