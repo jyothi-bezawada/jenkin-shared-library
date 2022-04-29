@@ -1,0 +1,14 @@
+containers:
+  - name: "jnlp"
+    image: "
+    securitycontext:
+      runasUser: 1000
+    resources:
+      limits: {}
+      requests: 
+        memory: "256Mi'
+        cpu: "100m'
+    volumeMounts:
+    - mountpath; "/home/jenkins/agent'
+      name: "workspace-volume"
+      readOnly: false
