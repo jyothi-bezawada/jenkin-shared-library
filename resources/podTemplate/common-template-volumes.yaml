@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 volumes:
     -  name: docker-graph-storage
        emptyDir: {}
     -  name: app-cluster-config
-       secret;
+       secret:
         secreteName: legacy-jenkins-config
     - name: "workspace-volume"
-      emptyDir;
+      emptyDir:
        medium: ""
-=======
-
->>>>>>> 52f50020e7fd965277a2769a05bd1d76757bd45f
