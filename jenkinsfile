@@ -8,12 +8,12 @@ pipeline {
                 sh 'python --version'
                }
              }
-              stage ('build-nginx') {
-                   steps {
-                     container ('nginx') {
-                       sh node --version'
-                       }
-                     }
-                   }
-                 }   
-  }
+        stage ('build-nginx') {
+          steps{
+            conatainers ('nginx') {
+               sh 'node --version'
+            }
+          }
+        }
+      }
+}
