@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 volumes:
     -  name: docker-graph-storage
        emptyDir: {}
@@ -7,3 +8,6 @@ volumes:
     - name: "workspace-volume"
       emptyDir;
        medium: ""
+=======
+
+>>>>>>> 52f50020e7fd965277a2769a05bd1d76757bd45f
