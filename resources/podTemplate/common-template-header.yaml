@@ -4,7 +4,8 @@ metadata:
   labels:
     pod-label: jenkins-agent
 spec:
-   conatainers:
-   volumes:
-   imagepullsecrets:
-       name: infosys-sre-docker
+  containers:
+    - 
+  valumes:
+  imagePullSecrets:
+    - name: infosys-sre-docker

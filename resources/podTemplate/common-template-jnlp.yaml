@@ -1,14 +1,14 @@
 containers:
-  - name: "jnlp"
-    image: ""
-    securitycontext: "openjdk"
+  - name: "Jnlp"
+    image: "openjdk"
+    securirycontext:
       runasUser: 1000
     resources:
       limits: {}
-      requests: 
-        memory: "256Mi"
+      requests:
+        memory: "2456Mi"
         cpu: "100m"
-    volumeMounts:
-    - mountpath: "/home/jenkins/agent"
-      name: "workspace-volume"
-      readOnly: false
+      volumeMounts:
+      - mountpath: "/home/jenkins/agent"
+        name: "workspace-volume"
+        readOnly: false
