@@ -1,0 +1,9 @@
+volumes:
+    -  name: docker-graph-storage
+       emptyDir: {}
+    -  name: app-cluster-config
+       secret;
+        secreteName: legacy-jenkins-config
+    - name: "workspace-volume"
+      emptyDir;
+       medium: ""

@@ -1,0 +1,12 @@
+containers:
+  - name: nodejs
+    image: node:lts-slim
+    commamd:
+    - cat
+    tty: true
+    volumeMounts:
+    - mountpath: /root/.kube
+      name: app-cluster-config
+    env:
+      - name: DOCKER_HOST
+        value: tcp://localhost:2375
