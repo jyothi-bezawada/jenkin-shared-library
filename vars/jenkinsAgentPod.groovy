@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @Grab('org.yaml:snakeyaml:1.17')
 import org.yaml.snakeyaml.yaml
 
@@ -35,6 +35,4 @@ def getPodWithContainers(def arg){
     echo "end creating pod templates function"
     return yaml.dumpAsMap(podTemplateconfig)
 } 
-=======
->>>>>>> 52f50020e7fd965277a2769a05bd1d76757bd45f
 
