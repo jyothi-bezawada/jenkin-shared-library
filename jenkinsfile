@@ -5,15 +5,8 @@ pipeline {
    stages {
         stage ('build') {
             steps {
-                sh 'python --version'
+                sh 'node --version'
                }
              }
-        stage ('build-nodejs') {
-          steps{
-            conatainers ('nodejs') {
-               sh 'node --version'
-            }
-          }
-        }
       }
 }
