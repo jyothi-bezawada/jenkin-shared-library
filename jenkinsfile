@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    kubernetes { yaml jenkinsAgentpod.getpodwithcontainers(['nginx'])}
+    kubernetes { yaml jenkinsAgentpod.getpodwithcontainers(['nodejs14x'])}
   }
    stages {
         stage ('build') {
@@ -8,9 +8,9 @@ pipeline {
                 sh 'python --version'
                }
              }
-        stage ('build-nginx') {
+        stage ('build-nodejs') {
           steps{
-            conatainers ('nginx') {
+            conatainers ('nodejs') {
                sh 'node --version'
             }
           }
